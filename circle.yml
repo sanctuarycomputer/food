@@ -6,5 +6,5 @@ deployment:
     branch: master
     commands:
       - aws configure set preview.cloudfront true
-      - aws s3 sync . s3://food.sanctuary.computer/ --delete --exclude="circle.yml" --exclude=".gitignore" --exclude=".git"
+      - aws s3 sync . s3://food.sanctuary.computer/ --delete --exclude="circle.yml" --exclude=".gitignore" --exclude=".git/*"
       - aws cloudfront create-invalidation --distribution-id E2ETW9MUEWFLWC --paths '/*'
