@@ -1,0 +1,10 @@
+test:
+  override:
+    - echo "No Tests Needed"
+deployment:
+  master:
+    branch: master
+    commands:
+      - aws configure set preview.cloudfront true
+      - aws s3 sync build s3://food.sanctuary.computer/ --delete
+      - aws cloudfront create-invalidation --distribution-id E2ETW9MUEWFLWC --paths '/*'
