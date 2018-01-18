@@ -1,6 +1,6 @@
 test:
   override:
-    - echo "No Tests Needed"
+    - "true"
 deployment:
   master:
     branch: master
