@@ -60,6 +60,7 @@ a.no-underline {
 
 video {
   width: 100%;
+  box-shadow: 0 0 20px var(--light-grey);
 }
 
 @media (min-width: 52em) {
