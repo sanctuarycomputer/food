@@ -12,4 +12,4 @@ Navigate to http://localhost:8000/ in your browser to view your changes.
 
 ### Deploying this project 
 
-This project uses CirleCI. See this repo's issues for the latest.
+We deploy to production upon merging to `master`. This project is deployed to Vercel.
